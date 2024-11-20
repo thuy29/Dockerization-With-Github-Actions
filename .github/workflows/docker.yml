@@ -1,9 +1,6 @@
 name: Build and Push Docker Image
 
 on:
-  push:
-    branches:
-      - main
   workflow_run:
     workflows:
       - Test Application
@@ -26,8 +23,8 @@ jobs:
 
     - name: Build Docker image
       run: |
-        docker build -t <dockerhub_username>/<repository_name>:latest .
+        docker build -t thuuuuyyy/hotelroom:latest .
 
     - name: Push Docker image
       run: |
-        docker push <dockerhub_username>/<repository_name>:latest
+        docker push thuuuuyyy/hotelroom:latest
