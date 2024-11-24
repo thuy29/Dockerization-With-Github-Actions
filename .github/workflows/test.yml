@@ -1,5 +1,4 @@
-name: Test Application
-
+name: Test
 on:
   push:
     branches:
